@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Site do Samuel</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <script src="/javascripts/validacao.js"></script>
+</head>
+<header>
+  <div class="box-area">
+    <div class="wrapper">
+      <div class="logo">
+        <a href="/"> <img src="/images/slogan2.png" class="logo" alt="Slogan Mundo JIX"> </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<body>
+  <div class=container>
+    <hr>
+    <fieldset id="formCadastro">
+      <legend>Cadastrar certificado: </legend>
+      <hr>
+      <form action="/enviar-cadastro" method="POST" onsubmit="return enviar()" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="atividadeCertificado">Nome da certificação: </label>
+          <input class="form-control" type="text" name="atividadeCertificado" id="atividadeCertificado" required />
+        </div>
+        <div class="form-group">
+          <label for="tempo">Carga horária: </label>
+          <input class="form-control" type="text" name="tempo" id="tempo" required />
+          <small class="form-text">* Apenas números. </small>
+        </div>
+        <br>
+        <label for="documento"></label>
+        <input type="file" name="documento" id="documento" class="btn btn-warning" required />
+        <small class="form-text">* Tamanho máximo de 3 MB. </small>
+        <hr>
+        <input type="submit" value="Cadastrar certificado" class="btn" />
+      </form>
+    </fieldset>
+    <hr>
+  </div>
+</body>
+<footer class="rodape">
+  &copy; Copyright 2021
+</footer>
+
+</html>
