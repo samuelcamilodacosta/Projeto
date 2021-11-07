@@ -1,4 +1,5 @@
-# Projeto
-Tecnologias usadas: HTML, CSS, Bootstrap, JavaScript, Node, Express, MySQL2
+# Project
 
-Uma aplicação Web front < - > back de cadastro, busca, atualização, exclusão, validação, etc.
+Technologies used: HTML, CSS, Bootstrap, JavaScript, Node, Express, MySQL2
+
+A Web front < - > back application for registration, search, update, deletion, validation, etc.
